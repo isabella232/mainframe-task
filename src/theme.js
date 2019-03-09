@@ -2,8 +2,10 @@ import { css } from 'styled-components'
 
 export const primaryColor = '#142543'
 export const successColor = '#00a7e7'
+export const white = '#fff'
 
-export const backgroundWhite = '#fff'
+export const backgroundWhite = white
+export const backgroundPrimary = primaryColor
 export const backgroundGrey = '#f7f7f7'
 
 export const textPrimaryColor = '#232323'
