@@ -12,7 +12,7 @@ import logo from 'assets/mainframe-logo.png'
 const FooterInner = styled.footer`
   background-color: ${backgroundPrimary};
   color: ${white};
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   padding: 40px 0;
 
