@@ -1,7 +1,7 @@
 import React from 'react'
 import { createGlobalStyle } from 'styled-components'
 import { backgroundWhite, textPrimaryColor } from 'theme'
-import { Container, LinkButton, Navbar } from 'components'
+import { Container, Footer, LinkButton, Navbar } from 'components'
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -24,11 +24,14 @@ class App extends React.Component {
       <>
         <GlobalStyles />
         <Navbar />
+        
         <Container>
           <LinkButton href='/#get-started'>
               Get started
           </LinkButton>
         </Container>
+
+        <Footer />
       </>
     )
   }
