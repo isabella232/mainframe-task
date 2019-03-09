@@ -7,6 +7,7 @@ const LinkButton = styled.a`
   color: ${successColor};
   display: inline-block;
   font-size: 1.2rem;
+  font-weight: bold;
   padding: 10px 16px;
   text-transform: uppercase;
   text-decoration: none;
