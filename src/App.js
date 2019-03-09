@@ -1,9 +1,13 @@
 import React from 'react'
 import { createGlobalStyle } from 'styled-components'
 import { backgroundWhite, textPrimaryColor } from 'theme'
-import { LinkButton } from 'components'
+import { Container, LinkButton, Navbar } from 'components'
 
 const GlobalStyles = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
+
   html {
     font-size: 10px;
   }
@@ -19,9 +23,12 @@ class App extends React.Component {
     return (
       <>
         <GlobalStyles />
-        <LinkButton href='/#get-started'>
-          Get started
-        </LinkButton>
+        <Navbar />
+        <Container>
+          <LinkButton href='/#get-started'>
+              Get started
+          </LinkButton>
+        </Container>
       </>
     )
   }
