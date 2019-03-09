@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { backgroundPrimary, white } from 'theme'
+import { backgroundPrimary, media, white } from 'theme'
 import { Container } from 'components'
 
 const Nav = styled.nav`
@@ -16,7 +16,9 @@ const Nav = styled.nav`
   > div {
     display: flex;
     align-items: baseline; 
+    flex-direction: column;
     justify-content: space-between;
+    ${media.sm`flex-direction: row;`}
   }
 `
 
