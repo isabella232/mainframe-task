@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { media } from 'theme'
 
 const FlexBox = styled.div`
   display: ${props => props.inline ? 'inline-flex' : 'flex'};

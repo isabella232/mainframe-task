@@ -9,7 +9,7 @@ const Nav = styled.nav`
   font-size: 1.8rem;
 
   h1 {
-    font-weight: normal;
+    font-size: 2.6rem;
     margin: 0;
   }
 
