@@ -10,6 +10,7 @@ export const backgroundGrey = '#f7f7f7'
 
 export const textPrimaryColor = '#232323'
 export const textSecondaryColor = '#8992a1'
+export const textSuccessColor = successColor
 
 const sizes = {
   xs: 576,
