@@ -19,7 +19,7 @@ const FooterInner = styled.footer`
   > div {
     display: flex;
     flex-direction: column;
-    ${media.sm`
+    ${media.smUp`
       flex-direction: row;
       justify-content: space-around;
     `}

@@ -18,7 +18,7 @@ const Nav = styled.nav`
     align-items: baseline; 
     flex-direction: column;
     justify-content: space-between;
-    ${media.sm`flex-direction: row;`}
+    ${media.smUp`flex-direction: row;`}
   }
 `
 

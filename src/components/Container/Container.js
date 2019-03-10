@@ -8,10 +8,10 @@ const Container = styled.div`
   margin-left: auto;
   width: 100%;
 
-  ${media.xs`max-width: 540px;`}
-  ${media.sm`max-width: 720px;`}
-  ${media.md`max-width: 960px;`}
-  ${media.lg`max-width: 1140px;`}
+  ${media.xsUp`max-width: 540px;`}
+  ${media.smUp`max-width: 720px;`}
+  ${media.mdUp`max-width: 960px;`}
+  ${media.lgUp`max-width: 1140px;`}
 `
 
 export default Container
