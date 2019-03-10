@@ -34,6 +34,8 @@ Object.keys(onlySizes).reduce((acc, size) => {
       if (value) {
         return i === 0 ? `(min-width: ${value}px)` : `(max-width: ${value}px)`
       }
+      
+      return null
     })
     .filter(value => typeof value === 'string')
     .join(' and ')
