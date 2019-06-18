@@ -1,4 +1,4 @@
-import { css } from 'styled-components'
+import createMediaQueries from './media-query'
 
 export const primaryColor = '#142543'
 export const successColor = '#00a7e7'
@@ -19,50 +19,4 @@ export const sizes = {
   lg: 1200
 }
 
-export const media = {}
-
-const onlySizes = {
-  xs: [ null, sizes.sm - 1 ],
-  sm: [ sizes.sm, sizes.md - 1 ],
-  md: [ sizes.md, sizes.lg - 1 ],
-  lg: [ sizes.lg, null ]
-}
-
-Object.keys(onlySizes).reduce((acc, size) => {  
-  const boundaries = onlySizes[size]
-    .map((value, i) => {
-      if (value) {
-        return i === 0 ? `(min-width: ${value}px)` : `(max-width: ${value}px)`
-      }
-      
-      return null
-    })
-    .filter(value => typeof value === 'string')
-    .join(' and ')
-
-  acc[size] = (...args) => css`
-    @media ${boundaries} {
-      ${css(...args)}
-    }
-  `
-
-  return acc
-}, media)
-
-const upSizes = {
-  xs: sizes.xs,
-  sm: sizes.sm,
-  md: sizes.md,
-  lg: sizes.lg
-}
-
-Object.keys(upSizes).reduce((acc, size) => {
-  const sizeName = `${size}Up`
-  acc[sizeName] = (...args) => css`
-    @media (min-width: ${upSizes[size]}px) {
-      ${css(...args)}
-    }
-  `
-
-  return acc
-}, media)
+export const media = createMediaQueries(sizes)

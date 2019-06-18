@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { 
-  backgroundPrimary, 
+import {
+  backgroundPrimary,
   media,
-  textSecondaryColor, 
-  white 
+  textSecondaryColor,
+  white
 } from 'theme'
 import { Container } from 'components'
 import logo from 'assets/mainframe-logo.png'

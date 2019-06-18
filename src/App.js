@@ -2,8 +2,8 @@ import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 import { backgroundGrey, backgroundWhite, textPrimaryColor, textSuccessColor } from 'theme'
 
-import { 
-  Container,  FlexBox, Footer, LinkButton, Navbar, 
+import {
+  Container, FlexBox, Footer, LinkButton, Navbar,
   Panel, PanelIcon
 } from 'components'
 
@@ -56,16 +56,16 @@ const Logo = styled.img`
 `
 
 class App extends React.Component {
-  render() {
+  render () {
     return (
       <>
         <GlobalStyles />
         <Navbar />
-        
+
         <Container>
           <Panel>
             <FlexBox direction='column' justify='center'>
-              <Logo src={erebos} alt="Erebos logo" />
+              <Logo src={erebos} alt='Erebos logo' />
 
               <h1>erebos</h1>
 
@@ -85,13 +85,13 @@ class App extends React.Component {
           <Container>
             <FlexBox xs={{ direction: 'column' }}>
               <Panel>
-                <PanelIcon src={documents} alt="Document icon" />
+                <PanelIcon src={documents} alt='Document icon' />
                 <h2>Decentralized file storage</h2>
                 <p>Securely distribute you files accross the entire network using the <a href='/#'>Bzz APIs</a></p>
               </Panel>
 
               <Panel>
-                <PanelIcon src={graph} alt="Graph icon" />
+                <PanelIcon src={graph} alt='Graph icon' />
                 <h2>Peer-to-peer communications</h2>
                 <p>Encrypted communications between nodes with no dedicated servers required using the <a href='/#'>Pss APIs</a></p>
               </Panel>
@@ -102,7 +102,7 @@ class App extends React.Component {
         <Container>
           <FlexBox>
             <Panel>
-              <PanelIcon src={gears} alt="Gears icon" />
+              <PanelIcon src={gears} alt='Gears icon' />
               <h2>Your entrypoint into decentralized apps development</h2>
               <p>Swarm is a distributed storage platform and content distribution network, a native base layer service of the Etherium web3 stack.</p>
               <LinkButton href='/#'>Read the full Introduction</LinkButton>
@@ -116,4 +116,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default App
