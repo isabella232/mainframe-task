@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mainframe-task/static/css/main.3192d064.chunk.css",
+    "main.js": "/mainframe-task/static/js/main.1b4d8130.chunk.js",
+    "main.js.map": "/mainframe-task/static/js/main.1b4d8130.chunk.js.map",
+    "runtime~main.js": "/mainframe-task/static/js/runtime~main.61a57281.js",
+    "runtime~main.js.map": "/mainframe-task/static/js/runtime~main.61a57281.js.map",
+    "static/js/2.3e7066cc.chunk.js": "/mainframe-task/static/js/2.3e7066cc.chunk.js",
+    "static/js/2.3e7066cc.chunk.js.map": "/mainframe-task/static/js/2.3e7066cc.chunk.js.map",
+    "index.html": "/mainframe-task/index.html",
+    "precache-manifest.6e99e2a9a47a14152143ced072d2027e.js": "/mainframe-task/precache-manifest.6e99e2a9a47a14152143ced072d2027e.js",
+    "service-worker.js": "/mainframe-task/service-worker.js",
+    "static/css/main.3192d064.chunk.css.map": "/mainframe-task/static/css/main.3192d064.chunk.css.map",
+    "static/media/mainframe-logo.png": "/mainframe-task/static/media/mainframe-logo.eeeb594e.png"
+  }
+}
